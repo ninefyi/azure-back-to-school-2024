@@ -8,6 +8,6 @@ steps:
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'MVP - Visual Studio Enterprise Subscription(73728d59-aac4-4cba-b129-8fc33a01d117)'
-    scriptType: 'batch'
+    scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az acr build -t azurebacktoschool24:latest -r fyimvp .'
